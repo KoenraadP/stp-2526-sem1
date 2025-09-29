@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue {
+            color: blue;
+            font-weight: bolder;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> QUIZ </h1>
+    <div style="font-weight: bold;border:solid">
+        <p class="blue"> Wat is het adres van Creo campus Klara? </p>
+        <p> Wat is het adres van Creo campus Kortrijk? </p>
+    </div>
+    <button id="answers-button">Klik voor de antwoorden</button>
+    <div id="answers">
+        <!-- span: enkel dit woord wordt aangepast -->
+        <!-- blijft wel gewoon in de alinea staan -->
+        <p> Arme-Klarenstraat 75 – 
+            <span style="color:red">Roeselare</span></p>
+        <p class="blue"> Scheutistenlaan 12 – Kortrijk </p>
+    </div>
+
+    <!-- scriptje dat de knop doet werken :) -->
+    <script>
+        answers = document.getElementById("answers");
+        btnAnswers = document.getElementById("answers-button");
+        btnAnswers.addEventListener("click", function () {
+            if (answers.hidden === true) {
+                answers.hidden = false;
+            } else {
+                answers.hidden = true;
+            }
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- external css -->
+    <!-- link naar een main.css bestand binnen de submap css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/test.css">
+    <!-- internal css -->
+    <style>
+        h1, h2 {
+            background-color: gold;
+        }
+        /* puntje voor de naam om een class te maken */
+        .border {
+            border: 3px dotted hotpink;
+        }
+        /* # voor id */
+        #main-title {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">CSS</h1>
+
+    <!-- in line css -->
+    <p style="color: rgb(90, 205, 27);font-weight: bold;">
+        Cascading Style Sheets (afgekort tot CSS), stijlbladen, zijn een mogelijkheid om de 
+        vormgeving van webpagina's los te koppelen van hun feitelijke inhoud en centraal vast 
+        te leggen. Het Engelse "style" heeft de betekenis van "opmaak", niet van schrijfstijl. 
+        Het begrip "cascading" (als een waterval) verwijst naar de mogelijkheid van het overerven 
+        van opmaak-eigenschappen (zie onder).
+    </p>
+    <p class="border">
+        De CSS-informatie voor de vormgeving van het document wordt toegevoegd aan de 
+        HTML-code ervan. Die informatie mag in het HTML-bestand zelf staan, maar ook in een 
+        apart bestand waar het HTML-document naar verwijst. Een dergelijk extern bestand wordt 
+        ook wel stylesheet genoemd.
+    </p>
+    <p>
+        Een belangrijke reden voor de introductie van Cascading Style Sheets was de eenvoudigere 
+        en consistentere vormgeving van webpagina's, met minder webbrowser-specifieke 
+        eigenaardigheden. Het World Wide Web Consortium (W3C) heeft daartoe de standaard 
+        vastgelegd. De vastgelegde standaard is in de loop van de jaren aanmerkelijk uitgebreid. 
+        De oorspronkelijke standaard staat bekend als CSS1. Latere uitbreidingen staan bekend als
+         CSS2 en CSS3. Deze laatste uitbreiding (CSS3) is gedeeltelijk nog in ontwikkeling en is 
+         als zodanig geen officiële standaard.
+    </p>
+    <p>
+        Moderne browsers ondersteunen CSS1 en CSS2. CSS3 is nog geen officiële standaard, hierdoor 
+        is er minder ondersteuning door webbrowsers.
+    </p>
+
+    <h2 class="border">Aspecten van stijl en overerving</h2>
+
+    <p class="border">
+        Met Cascading Style Sheets kan de vormgeving van elk element in een webpagina worden 
+        bepaald. Een element van een webpagina wordt gedefinieerd door het gebruik van een 
+        HTML-tag. De term cascading geeft aan dat de stijl van elementen overerving vertoont: 
+        elk element neemt de stijl over van zijn parent-element, tenzij er een eigen stijl voor 
+        dat element is gegeven. Elke webbrowser heeft een ingebouwde stylesheet die de vormgeving 
+        van alle elementen bepaalt als er geen stylesheets aan een document worden meegegeven.
+    </p>
+    <p>
+        Een stijl bestaat uit een aantal aspecten zoals lettertype en voor- en achtergrondkleur. 
+        Ook breedte van kantlijnen, de horizontale en verticale positie, de zichtbaarheid, de 
+        transparantie, of een element boven of onder een ander element ligt en vele andere 
+        aspecten kunnen in een stylesheet worden aangegeven.
+    </p>    
+</body>
+</html>

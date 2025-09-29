@@ -1,0 +1,6 @@
+/* ander kleur voor p tag als de muis er over gaat */
+p:hover {
+    color:rgb(237, 252, 21);
+    background-color: purple;
+    opacity: 0.1;
+}
