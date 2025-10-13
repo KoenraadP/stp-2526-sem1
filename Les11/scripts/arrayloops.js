@@ -78,3 +78,32 @@ for (let i = 0; i < berries.length; i++) {
 
 // fruit array weer tonen
 document.body.innerHTML += fruit + "<br>";
+
+document.body.innerHTML += "<br>";
+
+// loop om items toe te voegen tot een specifiek woord ingetypt wordt
+let newShoppingItem = "";
+// while (newShoppingItem !== "stop") {
+//     newShoppingItem = prompt("Wat wil je nog uit de winkel?");
+//     shoppingList.push(newShoppingItem);
+// }
+
+// laatste item ("stop") verwijderen uit array
+shoppingList.pop();
+
+// shoppinglist nog eens volledig tonen
+document.body.innerHTML += shoppingList + "<br>";
+
+document.body.innerHTML += "<br>";
+
+// array met namen van studenten
+let students = ["Sohail", "Yasin", "Kasper", "Tim",
+                "Mohamed", "Kenny"];
+
+// random naam selecteren uit de array
+// dus vanaf students[0] tot en met students[5] random selectie maken
+let maxIndex = students.length - 1;
+let randomIndex = Math.round(Math.random() * maxIndex);
+
+// random persoon tonen
+document.body.innerHTML += students[randomIndex] + "<br>";
