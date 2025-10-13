@@ -12,9 +12,7 @@ for (let i = 0; i < 5; i++) {
 
 // volledige array tonen
 console.log(names);
-
 // array sorteren
 names.sort();
-
 // gesorteerde versie tonen
 console.log(names);
