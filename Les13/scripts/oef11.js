@@ -21,3 +21,23 @@ for (let i = 0; i < suits.length; i++) {
 
 // spel kaarten tonen in console
 console.log(deckOfCards);
+
+// kaarten 'shufflen' om ze in willekeurige volgorde door elkaar te steken
+
+// 'aflopende' loop
+for (let i = deckOfCards.length - 1; i > 0; i--) {
+    // huidige kaart opslaan
+    let currentCard = deckOfCards[i];
+
+    // random kaart uit deck kiezen om mee te wisselen
+    let randomIndex = Math.floor(Math.random() * (i + 1));
+    let randomCard = deckOfCards[randomIndex];
+
+    // kaarten wisselen, eerst de random kaart op de positie van de huidige kaart plaatsen
+    // daarna de huidige kaart op de positie van de random kaart plaatsen
+    deckOfCards[i] = randomCard;
+    deckOfCards[randomIndex] = currentCard;
+}
+
+// geshuffelde deck tonen
+console.log(deckOfCards);
