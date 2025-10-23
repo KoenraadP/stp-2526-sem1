@@ -38,3 +38,23 @@ function areaRectangle(length, width) {
     // 'uitkomst' van de function is
     return area;
 }
+
+console.log(ageInDays(40));
+console.log(ageInDays(75));
+document.body.innerHTML += ageInDays(14);
+
+function ageInDays(age) {
+    let days = age * 365;
+    return days;
+}
+
+let input = prompt("Vul een leeftijd in")
+checkAge(input);
+
+function checkAge(age) {
+    if (age >= 18) {
+        console.log("Toegelaten");
+    } else {
+        console.log("Geweigerd");
+    }
+}
