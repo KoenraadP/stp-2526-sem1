@@ -100,3 +100,11 @@ function checkAgeCorrect(dateInput) {
     if (age >= 13) return "Je mag TikTok gebruiken!";
     return "Eigenlijk mag je nog geen TikTok gebruiken...";
 }
+
+areaCircle(3);
+
+// areacircle
+function areaCircle(radius) {
+    let area = radius * radius * Math.PI;
+    console.log(area);
+}
